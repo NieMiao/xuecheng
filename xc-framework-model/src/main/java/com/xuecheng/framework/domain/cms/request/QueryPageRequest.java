@@ -2,12 +2,14 @@ package com.xuecheng.framework.domain.cms.request;
 
 import com.xuecheng.framework.model.request.RequestData;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
 
 /**
  * @description: 页面请求模型
  * @author: Niem
  * @Date: 2020/1/31-10:28
  */
+@Data
 public class QueryPageRequest extends RequestData {
     //站点id
     @ApiModelProperty("站点id")

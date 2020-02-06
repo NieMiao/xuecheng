@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.ComponentScan;
 
 /**
- * @description: 启动类
- * @author: Niem
+ * @Description: 启动类
+ * @Author: Niem
  * @Date: 2020/1/31-13:59
  */
 @SpringBootApplication
