@@ -12,11 +12,17 @@ import lombok.ToString;
 @ToString
 public enum CommonCode implements ResultCode{
 
-    INVALID_PARAM(false,10003,"非法参数！"),
     SUCCESS(true,10000,"操作成功！"),
     FAIL(false,11111,"操作失败！"),
     UNAUTHENTICATED(false,10001,"此操作需要登陆系统！"),
     UNAUTHORISE(false,10002,"权限不足，无权操作！"),
+    INVALID_PARAM(false,10003,"非法参数！"),
+    CMS_PAGE_NOTEXISTS(false,10004,"页面不存在"),
+    CMS_GENERATEHTML_DATAURLISNULL(false,10005,"页面的dataUrl为空"),
+    CMS_GENERATEHTML_DATAISNULL(false,10006,"模型数据为空"),
+    CMS_GENERATEHTML_TEMPLATEID_ISNULL(false,10007,"模板id为空"),
+    CMS_GENERATEHTML_TEMPLATE_ISNULL(false,10008,"模板文件不存在"),
+    CMS_GENERATEHTML_HTML_ISNULL(false,10009,"静态化页面不存在"),
     SERVER_ERROR(false,99999,"抱歉，系统繁忙，请稍后重试！");
     //    private static ImmutableMap<Integer, CommonCode> codes ;
     //操作是否成功
